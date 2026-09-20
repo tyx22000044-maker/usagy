@@ -1,0 +1,28 @@
+# AIUsageMeter Code Owners
+# 详细说明参见 docs/AGENT_COLLABORATION.md
+
+# Agent-Arch 独占区域
+/Sources/Domain/        @agent-arch
+/Sources/Data/          @agent-arch
+/Sources/Infrastructure/ @agent-arch
+
+# Agent-UI 独占区域
+/Sources/Features/      @agent-ui
+/Sources/DesignSystem/  @agent-ui
+
+# Agent-Adapter 独占区域
+/Sources/Adapters/      @agent-adapter
+/Fixtures/              @agent-adapter
+
+# Agent-Lead 独占区域
+/Sources/App/           @agent-lead
+/docs/                  @agent-lead
+
+# 共享区域（需双人审核）
+/Sources/Domain/Protocols/ @agent-arch @agent-lead
+/Sources/Adapters/Shared/  @agent-adapter @agent-lead
+
+# 项目配置文件（Agent-Lead 独占）
+/Package.swift          @agent-lead
+*.xcodeproj             @agent-lead
+*.xcworkspace           @agent-lead
